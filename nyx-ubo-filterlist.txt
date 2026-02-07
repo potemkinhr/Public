@@ -1,0 +1,68 @@
+! https://www.reddit.com
+reddit.com###redesign-beta-optin-btn
+
+! https://www.forum.hr
+www.forum.hr##.sidebar_column
+
+! YT Homepage - Hide the Shorts section
+youtube.com##[is-shorts]
+! YT Menu - Hide the Shorts button
+www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
+! YT Search - Hide Shorts
+www.youtube.com##ytd-search ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-video-renderer)
+! YT Search and Channels - Hide the Shorts sections
+www.youtube.com##ytd-reel-shelf-renderer
+! YT Channels - Hide the Shorts tab
+www.youtube.com##ytd-browse[page-subtype="channels"] [role="tab"]:nth-of-type(3):has-text(Shorts)
+! YT Subscriptions - Hide Shorts - Grid View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer [overlay-style="SHORTS"]:upward(ytd-grid-video-renderer)
+! YT Subscriptions - Hide Shorts - List View
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-item-section-renderer)
+! YT Subscriptions - New Layout - Hide Shorts
+www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer [overlay-style="SHORTS"]:upward(ytd-rich-item-renderer)
+! YT Sidebar - Hide Shorts
+www.youtube.com###related ytd-compact-video-renderer [overlay-style="SHORTS"]:upward(ytd-compact-video-renderer)
+
+! Net.HR grupacije
+net.hr##[class*="section"].banner-widget
+net.hr##[class*=section].sticky-banner.banner-widget
+net.hr##div.is_promo
+
+! https://www.telegram.hr
+www.telegram.hr##[class*="pretplata"]
+www.telegram.hr###intext_midas > div.full.center
+www.telegram.hr##.full.relative.center.single-top-banner
+www.telegram.hr##.full.relative.m-order-2 > .full.center.relative
+www.telegram.hr##.full.center.stocks-parent
+
+! https://www.bug.hr
+*.bug.hr/ads
+www.bug.hr##.post-listing--floating.post-listing:has(.post-listing__tag--premium)
+www.bug.hr##div.d-scheduled:has(.post-listing__tag--premium)
+www.bug.hr##.post-listing--list-wide-custom:has(.post-listing__premium-indicator)
+
+! https://dnevnik.hr
+dnevnik.hr##.ext-premium-story
+
+! https://www.jutarnji.hr
+www.jutarnji.hr##.card__article-link:has(.card__figure--premium)
+
+! https://www.vecernji.hr
+www.vecernji.hr##.offerholder
+www.vecernji.hr##.block--premium.block > .block__inner
+
+! https://www.24sata.hr
+www.24sata.hr##.undefined:has(.card__label_premium)
+
+! https://www.monitor.hr
+www.monitor.hr##article:has(.headline:contains("Sponzorirana vijest"))
+
+! https://www.linkedin.com
+www.linkedin.com##.premium-upsell-link
+www.linkedin.com##.pvs-premium-upsell__container
+
+! https://outlook.live.com
+outlook.live.com##.fui-MessageBar
+
+! https://www.udemy.com
+||accounts.google.com/gsi/iframe/select$subdocument
