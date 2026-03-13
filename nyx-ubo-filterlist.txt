@@ -53,6 +53,7 @@ dnevnik.hr##.ext-premium-story
 ! Jutarnji
 jutarnji.hr##.card__article-link:has(.card__figure--premium)
 jutarnji.hr##[class*="position_break_"]
+jutarnji.hr##[id^="widget-"]
 
 ! Vecernji
 vecernji.hr##.offerholder
@@ -60,6 +61,8 @@ vecernji.hr##.block--premium.block > .block__inner
 vecernji.hr##.premium_widget
 vecernji.hr##.component.component--slider
 vecernji.hr##.block__link
+vecernji.hr##.block__background.js-setBackground
+vecernji.hr##.block.block--premium
 
 ! 24sata
 24sata.hr##.undefined:has(.card__label_premium)
