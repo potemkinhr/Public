@@ -57,6 +57,9 @@ www.24sata.hr##.undefined:has(.card__label_premium)
 ! https://www.monitor.hr
 www.monitor.hr##article:has(.headline:contains("Sponzorirana vijest"))
 
+! https://index.hr
+index.hr##article.news-item-container:has(.spon-text)
+
 ! https://www.linkedin.com
 www.linkedin.com##.premium-upsell-link
 www.linkedin.com##.pvs-premium-upsell__container
