@@ -1,71 +1,92 @@
-! https://www.reddit.com
+! Reddit
 reddit.com###redesign-beta-optin-btn
 
-! https://www.forum.hr
-www.forum.hr##.sidebar_column
+! Forum.hr
+forum.hr##.sidebar_column
 
 ! YT Homepage - Hide the Shorts section
 youtube.com##[is-shorts]
 ! YT Menu - Hide the Shorts button
-www.youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
+youtube.com###guide [title="Shorts"], .ytd-mini-guide-entry-renderer[title="Shorts"]
 ! YT Search - Hide Shorts
-www.youtube.com##ytd-search ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-video-renderer)
+youtube.com##ytd-search ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-video-renderer)
 ! YT Search and Channels - Hide the Shorts sections
-www.youtube.com##ytd-reel-shelf-renderer
+youtube.com##ytd-reel-shelf-renderer
 ! YT Channels - Hide the Shorts tab
-www.youtube.com##ytd-browse[page-subtype="channels"] [role="tab"]:nth-of-type(3):has-text(Shorts)
+youtube.com##ytd-browse[page-subtype="channels"] [role="tab"]:nth-of-type(3):has-text(Shorts)
 ! YT Subscriptions - Hide Shorts - Grid View
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer [overlay-style="SHORTS"]:upward(ytd-grid-video-renderer)
+youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-grid-video-renderer [overlay-style="SHORTS"]:upward(ytd-grid-video-renderer)
 ! YT Subscriptions - Hide Shorts - List View
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-item-section-renderer)
+youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-video-renderer [overlay-style="SHORTS"]:upward(ytd-item-section-renderer)
 ! YT Subscriptions - New Layout - Hide Shorts
-www.youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer [overlay-style="SHORTS"]:upward(ytd-rich-item-renderer)
+youtube.com##ytd-browse[page-subtype="subscriptions"] ytd-rich-item-renderer [overlay-style="SHORTS"]:upward(ytd-rich-item-renderer)
 ! YT Sidebar - Hide Shorts
-www.youtube.com###related ytd-compact-video-renderer [overlay-style="SHORTS"]:upward(ytd-compact-video-renderer)
+youtube.com###related ytd-compact-video-renderer [overlay-style="SHORTS"]:upward(ytd-compact-video-renderer)
 
 ! Net.HR grupacije
 net.hr##[class*="section"].banner-widget
 net.hr##[class*=section].sticky-banner.banner-widget
 net.hr##div.is_promo
+net.hr##.placeholder-container
+net.hr##.se-module.se-module--swiper
+net.hr###promo_deskto
 
-! https://www.telegram.hr
-www.telegram.hr##[class*="pretplata"]
-www.telegram.hr###intext_midas > div.full.center
-www.telegram.hr##.full.relative.center.single-top-banner
-www.telegram.hr##.full.relative.m-order-2 > .full.center.relative
-www.telegram.hr##.full.center.stocks-parent
+! Emeđimurje
+emedjimurje.net.hr##:is(article, div[class*="card"], div[class*="post"], div[class*="news"], div[class*="item"]):has(a[href*="/vijesti/promo/"])
 
-! https://www.bug.hr
+! Telegram
+telegram.hr##[class*="pretplata"]
+telegram.hr###intext_midas > div.full.center
+telegram.hr##.full.relative.center.single-top-banner
+telegram.hr##.full.relative.m-order-2 > .full.center.relative
+telegram.hr##.full.center.stocks-parent
+
+! Bug
 *.bug.hr/ads
-www.bug.hr##.post-listing--floating.post-listing:has(.post-listing__tag--premium)
-www.bug.hr##div.d-scheduled:has(.post-listing__tag--premium)
-www.bug.hr##.post-listing--list-wide-custom:has(.post-listing__premium-indicator)
+bug.hr##.post-listing--floating.post-listing:has(.post-listing__tag--premium)
+bug.hr##div.d-scheduled:has(.post-listing__tag--premium)
+bug.hr##.post-listing--list-wide-custom:has(.post-listing__premium-indicator)
 
-! https://dnevnik.hr
+! Dnevnik
 dnevnik.hr##.ext-premium-story
 
-! https://www.jutarnji.hr
-www.jutarnji.hr##.card__article-link:has(.card__figure--premium)
+! Jutarnji
+jutarnji.hr##.card__article-link:has(.card__figure--premium)
+jutarnji.hr##[class*="position_break_"]
 
-! https://www.vecernji.hr
-www.vecernji.hr##.offerholder
-www.vecernji.hr##.block--premium.block > .block__inner
+! Vecernji
+vecernji.hr##.offerholder
+vecernji.hr##.block--premium.block > .block__inner
+vecernji.hr##.premium_widget
+vecernji.hr##.component.component--slider
+vecernji.hr##.block__link
 
-! https://www.24sata.hr
-www.24sata.hr##.undefined:has(.card__label_premium)
+! 24sata
+24sata.hr##.undefined:has(.card__label_premium)
+24sata.hr##.pieces_widget.pieces_widget--horizontal.pieces_widget--gifts.top_products
+24sata.hr###iFrameResizer0
+24sata.hr##.content_holder
 
-! https://www.monitor.hr
-www.monitor.hr##article:has(.headline:contains("Sponzorirana vijest"))
+! Monitor
+monitor.hr##article:has(.headline:contains("Sponzorirana vijest"))
+monitor.hr##article:has-text(Sponzorirana vijest)
 
-! https://index.hr
+! Index
 index.hr##article.news-item-container:has(.spon-text)
 
-! https://www.linkedin.com
-www.linkedin.com##.premium-upsell-link
-www.linkedin.com##.pvs-premium-upsell__container
+! Novi list
+novilist.hr##.widget-slider-wrap
 
-! https://outlook.live.com
+! RiPortal
+riportal.net.hr##a[href*="/kategorija/promo/"]:upward(article, div[class*="item"], .card, section)
+fiuman.hr###new-banners-container
+
+! Linkedin
+linkedin.com##.premium-upsell-link
+linkedin.com##.pvs-premium-upsell__container
+
+! Outlook
 outlook.live.com##.fui-MessageBar
 
-! https://www.udemy.com
+! Udemy
 ||accounts.google.com/gsi/iframe/select$subdocument
