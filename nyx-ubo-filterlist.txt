@@ -1,8 +1,13 @@
 ! Reddit
 reddit.com###redesign-beta-optin-btn
 
+! PCekspert
+pcekspert.com###FileFrame
+forum.pcekspert.com##table.tborder:nth-of-type(2)
+
 ! Forum.hr
 forum.hr##.sidebar_column
+forum.hr##.advertisement_postbit_legacy.tborder
 
 ! YT Homepage - Hide the Shorts section
 youtube.com##[is-shorts]
