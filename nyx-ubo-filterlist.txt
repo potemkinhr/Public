@@ -45,6 +45,7 @@ telegram.hr###intext_midas > div.full.center
 telegram.hr##.full.relative.center.single-top-banner
 telegram.hr##.full.relative.m-order-2 > .full.center.relative
 telegram.hr##.full.center.stocks-parent
+telegram.hr###offer-premium
 
 ! Bug
 *.bug.hr/ads
